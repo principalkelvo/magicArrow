@@ -39,9 +39,31 @@ ul li a{
 #marker{
     position: absolute;
     top: 0;
-    width: 6.05em;
+    margin-top: -5px;
+    /* width: 6.05em; */
     height: 3.2em;
-    background: #f00;
+    /* background: #f00; */
     transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+#marker::before{
+    content: '';
+    /* position: absolute; */
+    width: 15px;
+    height: 15px;
+    border-top: 4px solid #30a3ff ;
+    border-right: 4px solid #30a3ff ;
+    transform: rotate(45deg) translate(-20px, 20px);
+}
+#marker::after{
+    content: '';
+    /* position: absolute; */
+    width: 15px;
+    height: 15px;
+    border-top: 4px solid #30a3ff ;
+    border-right: 4px solid #30a3ff ;
+    transform: rotate(225deg) translate(-20px, 20px);
 }
