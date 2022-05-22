@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #333;
+}
+ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* list-style: none; */
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    position: relative;
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+#marker{
+    position: absolute;
+    top: 0;
+    width: 6.05em;
+    height: 3.2em;
+    background: #f00;
+}
